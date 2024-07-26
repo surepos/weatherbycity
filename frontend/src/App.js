@@ -35,7 +35,7 @@ function App() {
 
   const fetchWeather = async () => {
     try {
-      const response = await axios.post('http://localhost:8080/search', {
+      const response = await axios.post('https://weatherbycity.onrender.com/search', {
         cityName,
       });
       setWeather(response.data.weather);
